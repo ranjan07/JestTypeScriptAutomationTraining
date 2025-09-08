@@ -41,4 +41,46 @@ let obj = {
     exp: 10
 }
 
-console.log(obj);
+// console.log(obj);
+
+// object types
+let emp: { name: string, role: string, salary: number, exp?: number } = {
+    name: "Aaryan",
+    role: "Trainer",
+    salary: 50000
+}
+
+// console.log(emp);
+
+// interfaces
+interface Employee {
+    name: string;
+    role: string;
+    salary: number;
+    exp?: number; // optional property
+}
+
+let emp1: Employee = {
+    name: "Aaryan",
+    role: "Trainer",
+    salary: 50000,
+    exp: 10
+}
+
+let val: unknown = 5; // not disable type checking
+val = "Now I'm a string";
+
+if (typeof val === "string") {
+    console.log(`String length is ${val.length}`);
+}
+
+
+let val1: any = 10; // disable type checking
+val1 = "Now I'm a string";
+
+if (typeof val1 === "string") {
+    console.log(`String length is ${val1.length}`);
+} else {
+    // This will not cause a compile-time error, but may cause a runtime error if val1 is not a string
+    console.log(`String length is ${val1.length}`); // Potential runtime error
+}
