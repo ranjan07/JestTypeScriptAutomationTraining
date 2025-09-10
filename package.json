@@ -1,0 +1,25 @@
+{
+  "name": "jesttypescripttraining",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/ranjan07/JestTypeScriptAutomationTraining#readme",
+  "bugs": {
+    "url": "https://github.com/ranjan07/JestTypeScriptAutomationTraining/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranjan07/JestTypeScriptAutomationTraining.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "jest.config.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.1.3",
+    "ts-jest": "^29.4.1"
+  }
+}
