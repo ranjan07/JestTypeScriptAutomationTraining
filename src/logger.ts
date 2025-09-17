@@ -1,10 +1,10 @@
-export class Logger{
-    log(message:string):void{
+export class Logger {
+    log(message: string): void {
         console.log('[LOG]:${message}');
     }
 
-    error(message:string):void{
+    error(message: string): void {
         console.error('[ERROR]: ${message}');
     }
 }
-export const logger=new Logger();
+export const logger = new Logger();
