@@ -8,5 +8,14 @@ module.exports = {
   transform: {
     ...tsJestTransformCfg,
   },
-  setupFiles: ['./jest.setup.js']
+
+  reporters:[
+    "default",
+    ["jest-html-reporters",{
+      publicpath:"./html-report",
+      filename:"report.html",
+      expand:true,
+      pageTitle:"Test Report"
+    }]
+  ]
 };
